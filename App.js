@@ -44,6 +44,7 @@ const addTodo = () => {
   const newKey = String(todos.length)
   const object = {key: newKey,description: newTodo}
   const newTodos = [...todos, object]
+  storeData(newTodos)
   setTodos(newTodos)
   setNewTodo('')
 }
